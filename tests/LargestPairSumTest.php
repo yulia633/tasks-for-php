@@ -3,28 +3,28 @@
 namespace Tests;
 
 use PHPUnit\Framework\TestCase;
-
 use App\LargestPairSum;
 
 class LargestPairSumTest extends TestCase
 {
-    public function testLargestPairSum()
+    public function addDataProvider()
+    {
+        return [
+            [[1], 1],
+            [[1, 2, 3, 4, 5, 6], 11],
+            [[12, 34, 10, 6, 40], 74],
+            [[12, 40, 10, 6, 40], 80],
+            [[12, -34, 10, 6, 40], 52],
+        ];
+    }
+
+    /**
+     * @dataProvider addDataProvider
+     */
+    public function testLargestPairSum($list, $expected)
     {
         $obj = new LargestPairSum();
-
-        $listFirst = [1];
-        $this->assertEquals(1, $obj->pairSum($listFirst));
-
-        $listSecond = [1, 2, 3, 4, 5, 6];
-        $this->assertEquals(11, $obj->pairSum($listSecond));
-
-        $listThird = [12, 34, 10, 6, 40];
-        $this->assertEquals(74, $obj->pairSum($listThird));
-
-        $listFourth = [12, 40, 10, 6, 40];
-        $this->assertEquals(80, $obj->pairSum($listFourth));
-
-        $listFourth = [12, -34, 10, 6, 40];
-        $this->assertEquals(52, $obj->pairSum($listFourth));
+        $result = $obj->pairSum($list);
+        $this->assertSame($expected, $result);
     }
 }
