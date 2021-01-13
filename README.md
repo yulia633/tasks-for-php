@@ -23,3 +23,5 @@
 
 * [Наибольшая сумма пар](src/LargestPairSum.php)
 > Given an array of integers, find the largest pair sum in it. For example, the largest pair sum in [12, 34, 10, 6, 40] is 74
+* [Баланс скобок](src/CheckBrackets.php)
+> Check the balance of the brackets in the expression. Brackets can be round: "()", square: "[]", curly "{}" and angle: "<>"
