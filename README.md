@@ -1,5 +1,6 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/4bc23e1aa3c6d87c39ef/maintainability)](https://codeclimate.com/github/yulia633/tasks-for-php/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/4bc23e1aa3c6d87c39ef/test_coverage)](https://codeclimate.com/github/yulia633/tasks-for-php/test_coverage)
+![PHP CI](https://github.com/yulia633/tasks-for-php/workflows/PHP%20CI/badge.svg)
 
 # Решение задач
 
