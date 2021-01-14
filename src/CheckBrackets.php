@@ -6,23 +6,12 @@ class CheckBrackets
 {
     public function check(string $str): bool
     {
-        $stack = [];
-        $start = ["(", "[", "{", "<"];
-        $pairs = ["()", "[]", "{}", "<>"];
+        $count = strlen($str);
 
-        for ($i = 0; $i < strlen($str); $i += 1) {
-            $current = $str[$i];
-            if (in_array($current, $start)) {
-                array_push($stack, $current);
-            } else {
-                $prev = array_pop($stack);
-                $pair = "{$prev}{$current}";
-                if (!in_array($pair, $pairs)) {
-                    return false;
-                }
-            }
-        }
+        do {
+            $str = str_replace([' ', '()', '[]', '{}', '<>'], '', $str, $count);
+        } while ($count);
 
-        return count($stack) === 0;
+        return $str === "";
     }
 }
