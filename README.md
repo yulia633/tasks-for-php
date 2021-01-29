@@ -27,3 +27,7 @@
 > Check the balance of the brackets in the expression. Brackets can be round: "()", square: "[]", curly "{}" and angle: "<>"
 * [Переворот строки](src/ReverseString.php)
 > Create reverse string function. The first function should apply a linear-recursive process, the second function is a linear-iterative.
+* [Факториал числа](src/Factorial.php)
+> Create factorial function. The first function should apply a linear-recursive process, the second function is a linear-iterative.
+* [Найти сумму от 1 до N](src/Sum.php)
+> Find the sum from 1 to N. The first function should apply a linear-recursive process, the second function is a linear-iterative.
