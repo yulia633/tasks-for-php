@@ -31,3 +31,5 @@
 > Create factorial function. The first function should apply a linear-recursive process, the second function is a linear-iterative.
 * [Найти сумму от 1 до N](src/Sum.php)
 > Find the sum from 1 to N. The first function should apply a linear-recursive process, the second function is a linear-iterative.
+* [Поиск ключа в коробке из Грокаем алгоритмы](src/Box.php)
+> Write a function search key in the box from a book Grochem algorithms. The first function should apply a linear-recursive process, the second function is a linear-iterative.
