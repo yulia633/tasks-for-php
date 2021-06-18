@@ -33,3 +33,5 @@
 > Find the sum from 1 to N. The first function should apply a linear-recursive process, the second function is a linear-iterative.
 * [Поиск ключа в коробке из Грокаем алгоритмы](src/Box.php)
 > Write a function search key in the box from a book Grochem algorithms. The first function should apply a linear-recursive process, the second function is a linear-iterative.
+* [Четность элемента как у первого](src/SameParity.php)
+> Implement a function that takes a list as input and returns a new one consisting of elements that have the same parity as the first element of the input list.
